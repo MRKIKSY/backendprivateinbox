@@ -5,6 +5,7 @@ import tailwindcss from 'tailwindcss'; // Import Tailwind CSS here
 
 export default defineConfig({
   plugins: [react()],
+  base: 'https://privateinboxapp.onrender.com',
   css: {
     postcss: {
       plugins: [tailwindcss], // Use the imported tailwindcss plugin
@@ -16,5 +17,8 @@ export default defineConfig({
     },
   },
 });
+
+
+
 
 
