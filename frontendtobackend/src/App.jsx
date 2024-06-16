@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Form from './components/Form';
 import DataDisplay from './components/DataDisplay';
+import UploadPictures from "./components/UploadPictures";
+import DisplayPictures from "./components/DisplayPictures"
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Form />} />
           <Route path="/datadisplay" element={<DataDisplay />} />
+          <Route exact  path="/uploadpictures" element={<UploadPictures />} />
+          <Route exact  path="/displaypictures" element={<DisplayPictures />} />
         </Routes>
       </div>
     </Router>
